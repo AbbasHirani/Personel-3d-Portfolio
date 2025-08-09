@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -85,12 +86,12 @@ section {
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-10 pointer-events-none;
+    @apply flex flex-col justify-center md:text-[36px] text-[18px] font-semibold relative z-10 pointer-events-none;
     img {
       @apply size-8 md:size-10 object-contain;
     }
     .slide {
-      @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
+      @apply absolute pt-0 py-[20px] h-[48px] md:h-[55px] md:translate-y-1 translate-y-1 overflow-hidden;
     }
   }
 
@@ -280,7 +281,7 @@ section {
 
   form {
     label {
-      @apply block text-white-50 mb-2;
+      @apply block text-white-50 mb-2 ;
     }
 
     input,
@@ -332,10 +333,10 @@ section {
 .wrapper {
   display: flex;
   flex-direction: column;
-  animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+  animation: wordSlider 20s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
 }
 
-@keyframes wordSlider {
+/* @keyframes wordSlider {
   0% {
     transform: translateY(0.5%);
   }
@@ -360,7 +361,17 @@ section {
   87.5% {
     transform: translateY(-87.5%);
   }
+} */
+
+@keyframes wordSlider {
+  0%    { transform: translateY(0); }         /* 1st word */
+  20%   { transform: translateY(-20%); }      /* 2nd word */
+  40%   { transform: translateY(-40%); }      /* 3rd word */
+  60%   { transform: translateY(-60%); }      /* 4th word */
+  80%   { transform: translateY(-80%); }      /* 5th word */
+  100%  { transform: translateY(0); }         /* back to start */
 }
+
 
 /* Hero Text slider ends */
 

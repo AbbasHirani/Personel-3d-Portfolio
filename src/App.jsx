@@ -1,8 +1,9 @@
 import React from 'react';
+import Hero from './sections/Hero';
 
 const App = () => {
   return (
-    <h1>Hello World</h1>
+    <Hero />
   );
 };
 
