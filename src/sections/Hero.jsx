@@ -1,8 +1,11 @@
 import React from 'react';
 import { words } from '../constants';
 import Button from '../components/button';
+import { useRef } from 'react';
+import VariableProximity from '../components/VariableProximity';
 
 const Hero = () => {
+    const containerRef = useRef(null);
   return (
     <section id="hero" className='relative overflow-hidden'>
         <div className='absolute top-0 left-0 z-10'>
@@ -33,21 +36,63 @@ const Hero = () => {
                             </span>
                         </h1>
                         <br />
-                        <h1> CSE Undergrad | Building Scalable Applications</h1>
+                        <div
+                            ref={containerRef}
+                            style={{position: 'relative', display: 'inline-block'}}
+                        >
+                        <VariableProximity
+                            label={'CSE Undergrad | Building Scalable Applications'}
+                            className={'variable-proximity-demo'}
+                            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                            toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                            containerRef={containerRef}
+                            radius={100}
+                            falloff='linear'
+                        />
+                        </div>  
                     </div>
+                     <div
+                            ref={containerRef}
+                            style={{position: 'relative', display: 'inline-block'}}
+                        >
+                        <VariableProximity
+                            label={`Take a look at my projects to see how I turn ideas into reality.\n Let's connect and create something amazing together!`}
+                            className={'variable-proximity-demo'}
+                            style={{ whiteSpace: 'pre-line' }} 
+                            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                            toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                            containerRef={containerRef}
+                            radius={100}
+                            falloff='linear'
+                        />
+                        </div>
                     <p className='text-white-50 md:text-l relative z10 pointer-events-none'>
-                        Take a look at my projects to see how I turn ideas into reality. 
-                        <br/>
-                        Let's connect and create something amazing together!
+
                     </p>
                     <Button 
                         className = "md:w-80 md:h-16 w-60 h-12"
                         id="button"
                         text="See my Work"
                     />
+                               
+
+<div
+ref={containerRef}
+style={{position: 'relative', display: 'inline-block'}}
+>
+  <VariableProximity
+    label={'Hover me! And then star React Bits on GitHub, or else...'}
+    className={'variable-proximity-demo'}
+    fromFontVariationSettings="'wght' 400, 'opsz' 9"
+    toFontVariationSettings="'wght' 1000, 'opsz' 40"
+    containerRef={containerRef}
+    radius={100}
+    falloff='linear'
+  />
+</div>
                 </div>
             </header>
-           
+
         </div>
     </section>
   )
