@@ -1,10 +1,28 @@
-import React from 'react';
 import { words } from '../constants';
 import Button from '../components/button';
 import { useRef } from 'react';
 import VariableProximity from '../components/VariableProximity';
+import HeroExperience from '../components/HeroModels/HeroExperience';
+import { useGSAP } from '@gsap/react';  
+import gsap from 'gsap';
+import AnimatedCounter from '../components/animatedCounter';
 
 const Hero = () => {
+    useGSAP(()=>{
+        gsap.fromTo(`.hero-text h1 `,
+            {
+                y:50,
+                opacity : 0
+            },
+            {
+                y:0,
+                opacity : 1,
+                stagger: 0.2,
+                duration: 1,
+                ease: 'power2.out',
+            },
+        )
+    })
     const containerRef = useRef(null);
   return (
     <section id="hero" className='relative overflow-hidden'>
@@ -12,7 +30,6 @@ const Hero = () => {
             <img src="/images/bg.png" alt="background" />
         </div>
         <div className='hero-layout'>
-            {/* left Hero content */}
             <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
                 <div className='flex flex-col gap-7'>
                     <div className='hero-text'>
@@ -36,28 +53,15 @@ const Hero = () => {
                             </span>
                         </h1>
                         <br />
-                        <div
-                            ref={containerRef}
-                            style={{position: 'relative', display: 'inline-block'}}
-                        >
-                        <VariableProximity
-                            label={'CSE Undergrad | Building Scalable Applications'}
-                            className={'variable-proximity-demo'}
-                            fromFontVariationSettings="'wght' 400, 'opsz' 9"
-                            toFontVariationSettings="'wght' 1000, 'opsz' 40"
-                            containerRef={containerRef}
-                            radius={100}
-                            falloff='linear'
-                        />
-                        </div>  
+                        <h1>Building Scalable Apps</h1> 
                     </div>
                      <div
                             ref={containerRef}
                             style={{position: 'relative', display: 'inline-block'}}
                         >
                         <VariableProximity
-                            label={`Take a look at my projects to see how I turn ideas into reality.\n Let's connect and create something amazing together!`}
-                            className={'variable-proximity-demo'}
+                            label={`Take a look at my projects to see how I turn ideas into reality.\nLet's connect and create something amazing together!`}
+                            className={'variable-proximity-demo pointer-events-none'}
                             style={{ whiteSpace: 'pre-line' }} 
                             fromFontVariationSettings="'wght' 400, 'opsz' 9"
                             toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -66,34 +70,22 @@ const Hero = () => {
                             falloff='linear'
                         />
                         </div>
-                    <p className='text-white-50 md:text-l relative z10 pointer-events-none'>
-
-                    </p>
+                    
                     <Button 
                         className = "md:w-80 md:h-16 w-60 h-12"
                         id="button"
                         text="See my Work"
                     />
-                               
-
-<div
-ref={containerRef}
-style={{position: 'relative', display: 'inline-block'}}
->
-  <VariableProximity
-    label={'Hover me! And then star React Bits on GitHub, or else...'}
-    className={'variable-proximity-demo'}
-    fromFontVariationSettings="'wght' 400, 'opsz' 9"
-    toFontVariationSettings="'wght' 1000, 'opsz' 40"
-    containerRef={containerRef}
-    radius={100}
-    falloff='linear'
-  />
-</div>
                 </div>
             </header>
-
-        </div>
+            <figure>
+                <div className='hero-3d-layout border-red-200'>
+                    <HeroExperience />
+                    
+                </div>
+            </figure>
+        </div> 
+        <AnimatedCounter />
     </section>
   )
 }
