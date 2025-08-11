@@ -92,6 +92,7 @@ section {
     }
     .slide {
       @apply absolute pt-0 py-[20px] h-[28px] md:h-[60px] md:translate-y-0.5 translate-y-0.5 overflow-hidden;
+/*       @apply absolute pt-0 py-[20px] h-[48px] md:h-[78px] md:-translate-y-0.5 -translate-y-0.5 overflow-hidden; */
 
     }
   }
