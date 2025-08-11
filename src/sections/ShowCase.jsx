@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ShowCase = () => {
 
+
   const section1Ref = useRef(null);
   const project1Ref = useRef(null);
   const project2Ref = useRef(null);
@@ -38,7 +39,7 @@ const ShowCase = () => {
         delay:0.3 *(index+1),
         scrollTrigger : {
           trigger: card,
-          start: 'top bottom -=500', 
+          start: 'top bottom -=100', 
         }
       }
     )
