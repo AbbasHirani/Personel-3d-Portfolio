@@ -8,18 +8,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ShowCase = () => {
 
-  const sectionRef = useRef(null);
+
+  const section1Ref = useRef(null);
   const project1Ref = useRef(null);
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
-
-  const projects = [sectionRef.current,project1Ref.current,project2Ref.current,project3Ref.current]
+  const project4Ref = useRef(null);
+  const project5Ref = useRef(null);
+  const project6Ref = useRef(null);
 
   useGSAP(()=> {
-    const projects = [sectionRef.current,project1Ref.current,project2Ref.current,project3Ref.current]
+    const projects = [section1Ref.current,project1Ref.current,project2Ref.current,project3Ref.current,project4Ref.current,project5Ref.current,project6Ref.current];
     
     gsap.fromTo(
-      sectionRef.current,
+      section1Ref.current,
       {opacity:0},
       {opacity:1, duration:1.5}
     )
@@ -48,7 +50,7 @@ const ShowCase = () => {
     <section
       id= "work"
       className="app-showcase"
-      ref={sectionRef}
+      ref={section1Ref}
     >
       <div className="w-full">
         {/* Project Div */}
@@ -126,7 +128,7 @@ const ShowCase = () => {
           </div>
           <div className="showcaselayout">
             {/* left side showcase */}
-            <div className="first-project-wrapper" ref={project1Ref}>
+            <div className="first-project-wrapper" ref={project4Ref}>
               <div className="image-wrapper">
                 <img src="images/lib1.png" alt="Project 1" />
               </div>
@@ -156,13 +158,13 @@ const ShowCase = () => {
             </div>
             {/* right side showcase */}
             <div className="project-list-wrapper overflow-hidden ">
-              <div className="project" ref={project2Ref}>
+              <div className="project" ref={project5Ref}>
                 <div className="image-wrapper bg-[#ffe7eb]">
                   <img src="images/lib.png" alt="Project 2" />
                 </div>
                 <p className='mt-2'>Tkinter UI + ttk.Treeview, MySQL (mysql.connector); CRUD for members (card number, name, phone, address, DOB), validated inputs, searchable/scrollable table, and modular code structure.</p>
               </div>
-              <div className="project" ref={project3Ref}>
+              <div className="project" ref={project6Ref}>
                 <div className="image-wrapper bg-[#ffefdb]">
                   <img src="images/lib2.png" alt="Project 3" />
                 </div>
