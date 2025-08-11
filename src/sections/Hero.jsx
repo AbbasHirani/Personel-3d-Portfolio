@@ -80,7 +80,7 @@ const Hero = () => {
             </header>
             <figure>
                 <div className='hero-3d-layout border-red-200'>
-                    <HeroExperience />
+                    {/* <HeroExperience /> */}
                     
                 </div>
             </figure>
