@@ -22,14 +22,14 @@ const words = [
     { text : 'React Developer' , imgPath: '/images/react.svg' },
     {text : 'Backend Developer' , imgPath: '/images/backend.png'},
     { text : 'Graphic Designer', imgPath: '/images/graphic.png'},
-    { text : 'Open Source Contributor', imgPath: '/images/open-source.png' },
+    { text : 'FreeLancer', imgPath: '/images/freelance.png' },
 ]
 
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
+  { value: 1, suffix: "+", label: "Years of Experience" },
+  { value: 0, suffix: "+", label: "Satisfied Clients" },
+  { value: 5, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
