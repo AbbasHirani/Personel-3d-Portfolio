@@ -22,7 +22,7 @@ const words = [
     { text : 'React Developer' , imgPath: '/images/react.svg' },
     {text : 'Backend Developer' , imgPath: '/images/backend.png'},
     { text : 'Graphic Designer', imgPath: '/images/graphic.png'},
-    { text : 'Open Source Contributor', imgPath: '/images/open-source.png' },
+    { text : 'FreeLancer', imgPath: '/images/freelance.png' },
 ]
 
 
