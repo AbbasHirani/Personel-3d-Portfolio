@@ -12,6 +12,7 @@ const ShowCase = () => {
   const project1Ref = useRef(null);
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
+  
 
   const projects = [sectionRef.current,project1Ref.current,project2Ref.current,project3Ref.current]
 
@@ -52,33 +53,45 @@ const ShowCase = () => {
     >
       <div className="w-full">
         {/* Project Div */}
-        <h2 className="text-2xl md:text-6xl font-semibold text-white mb-6"> Projects </h2>
-        <div className='mt-6 mb-25'>
-          <div className="mt-12 mb-6 text-center"> <h2 className="text-3xl md:text-3xl font-semibold text-white">WanderLust - AirBnb Clone</h2> </div>
-          <div className="showcaselayout">
+        <h2 className="text-4xl md:text-6xl font-semibold text-white mb-6 "> Projects </h2>
+        <div className='mt-1 mb-2 bg-zinc-900 px-6 pt-1 rounded-xl'>
+          <div className="mt-5 mb-6 text-center"> <h2 className="text-2xl md:text-3xl font-semibold text-white">WanderLust - AirBnb Clone</h2> </div>
+          <div className="showcaselayout pb-5">
             {/* left side main Image */}
             <div className="first-project-wrapper" ref={project1Ref}>
               <div className="image-wrapper">
-                <img src="images/airbnb-1.png" alt="airbnb-1" />
+                <img  src="images/airbnb-1.png" alt="airbnb-1" />
               </div>
               <div className="text-content">
-                <p className="text-white-50 md:text-xl">
-                  Wanderlust is an Airbnb‑inspired full‑stack platform that lets users discover, create, and manage rental property listings with rich details, images, and reviews. <br />It delivers a seamless browsing experience with search and filtering, secure account management, and user-driven content, enabling hosts to publish listings and guests to explore, review, and engage—all within a responsive, production‑style interface.
-                </p>
-                <div className="flex items-center gap-12 mt-4">
-                  <Button2 
-                    className= "md:w-80 md:h-16 w-60 h-12"
-                    text = 'View Live'
-                    link="https://wanderlust-kgz7.onrender.com/"
-                  />
-                  <Button2 
-                    className= "md:w-80 md:h-16 w-60 h-12"
-                    text = 'Source Code'
-                    link="https://github.com/AbbasHirani/WanderLust.git"
-                  />
+                {/* decription */}
+                <div className="max-w-full  bg-opacity-30 p-6 rounded-lg">
+                  <div className="max-w-full  px-1">
+                    <p className="text-white text-opacity-80 sm:text-sm md:text-base lg:text-lg leading-relaxed mb-3">
+                       Wanderlust is an Airbnb‑inspired full‑stack platform that lets users discover, create, and manage rental property listings with rich details, images, and reviews.
+                    </p>
+                    <p className="text-white text-opacity-80 sm:text-sm md:text-base lg:text-lg leading-relaxed mb-3">
+                      It delivers a seamless browsing experience with search and filtering, secure account management, and user-driven content, enabling hosts to publish listings and guests to explore, review, and engage—all within a responsive, production‑style interface.
+                    </ p>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-3 mt-3 items-center">
-                  <h1 className='mr-3   rounded bg-white/10 px-2'>Tech Stack </h1>
+                <div className="flex items-center gap-12 mt-2 px-5">
+                  <a
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  href="https://wanderlust-kgz7.onrender.com/"
+                  className='bg-white-50 w-full sm:w-30 lg:w-50 px-5 py-2 rounded-lg'>
+                    <p className=' text-center text-black text-base sm:text-lg lg:text-2xl '>View Live</p>
+                  </a>
+                  <a
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  href="https://github.com/AbbasHirani/WanderLust.git"
+                  className='bg-white-50 w-full sm:w-40 lg:w-50 px-5 py-2 rounded-lg'>
+                    <p className='text-center text-black text-base sm:text-lg lg:text-2xl '>Source Code</p>
+                  </a>
+                </div>
+                <div className="w-full flex flex-wrap gap-2 mt-3 items-center px-4">
+                  {/* <h1 className='mr-3   rounded bg-white/10 px-2'>Tech Stack </h1> */}
                    <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
                     <img src="/images/logos/node.png" alt="Node.js" className="w-4 h-4" /> 
                     <span>Node.js</span>  
