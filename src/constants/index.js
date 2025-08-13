@@ -1,7 +1,9 @@
+import { link } from "motion/react-client";
+
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name : 'Projects',
+    link : "#work",
   },
   {
     name: "Experience",
