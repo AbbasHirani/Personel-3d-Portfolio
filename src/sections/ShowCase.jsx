@@ -28,7 +28,7 @@ const ShowCase = () => {
     )
 
     // Only animate the project cards
-    const projects = [project1Ref.current, project2Ref.current, project3Ref.current, project4Ref.current, project5Ref.current, project6Ref.current];
+    // const projects = [project1Ref.current, project2Ref.current, project3Ref.current, project4Ref.current, project5Ref.current, project6Ref.current];
     
     projects.forEach((card,index)=>{
       gsap.fromTo(
