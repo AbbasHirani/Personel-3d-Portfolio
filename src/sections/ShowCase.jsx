@@ -7,7 +7,7 @@ import { gsap } from 'gsap';
 gsap.registerPlugin(ScrollTrigger);
 
 const ShowCase = () => {
-
+  
   const section1Ref = useRef(null);
   const project1Ref = useRef(null);
   const project2Ref = useRef(null);
@@ -17,7 +17,10 @@ const ShowCase = () => {
   const project6Ref = useRef(null);
 
   useGSAP(()=> {
+
     // Keep the section animation separate
+    const projects = [section1Ref.current,project1Ref.current,project2Ref.current,project3Ref.current,project4Ref.current,project5Ref.current,project6Ref.current];
+ 
     gsap.fromTo(
       section1Ref.current,
       {opacity:0},
