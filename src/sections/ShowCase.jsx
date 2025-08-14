@@ -80,38 +80,43 @@ const ShowCase = () => {
                     </ p>
                   </div>
                 </div>
-                <div className="flex items-center gap-6 mt-1 px-3 pb-2">
+                
+                <div className="flex flex-col sm:flex-row items-center gap-3 mt-1 px-3 pb-2 w-full">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://wanderlust-kgz7.onrender.com/"
-                    className="flex items-center justify-center gap-3 w-full sm:w-50 px-4 py-2 rounded-lg bg-white shadow-md hover:bg-gray-200 transition-colors duration-200"
+                    className="flex items-center justify-center gap-2 w-full sm:w-auto px-3 py-2 rounded-lg bg-white shadow-md hover:bg-gray-200 transition-colors duration-200"
                   >
                     <img
                       src="images/live.svg"
-                      alt="GitHub icon"
-                      className="w-6 h-6"
+                      alt="Live icon"
+                      className="w-5 h-5 sm:w-6 sm:h-6"
                     />
-                    <p className="font-mono text-black text-base sm:text-lg lg:text-xl">
-                      view Live
+                    <p className="font-mono text-black text-sm sm:text-base lg:text-lg xl:text-xl">
+                      View Live
                     </p>
-                  </a><a
+                  </a>
+
+                  {/* Source Code Link */}
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/AbbasHirani/WanderLust.git"
-                    className="flex items-center justify-center gap-3 w-full sm:w-50 px-4 py-2 rounded-lg bg-white shadow-md hover:bg-gray-200 transition-colors duration-200"
+                    className="flex items-center justify-center gap-2 w-full sm:w-auto px-3 py-2 rounded-lg bg-white shadow-md hover:bg-gray-200 transition-colors duration-200"
                   >
                     <img
                       src="images/code.png"
-                      alt="code icon"
-                      className="w-6 h-6"
+                      alt="Code icon"
+                      className="w-5 h-5 sm:w-6 sm:h-6"
                     />
-                    <p className="font-mono text-black text-base sm:text-lg lg:text-xl">
+                    <p className="font-mono text-black text-sm sm:text-base lg:text-lg xl:text-xl">
                       Source Code
                     </p>
                   </a>
                 </div>
-                <div className="w-full flex flex-wrap gap-6 mt-3 items-center px-3">
+
+                <div className="w-full flex flex-wrap gap-3 mt-3 items-center px-3">
                   <h1 className='text-center mr-3 w-28 h-6 pt-1 text-xs rounded bg-white/10 px-2'>Tech Stack Used</h1>
                    <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
                     <img src="/images/logos/node.png" alt="Node.js" className="w-4 h-4" /> 
@@ -176,7 +181,7 @@ const ShowCase = () => {
                     </ p>
                   </div>
                 </div>
-                <div className="flex items-center gap-6 mt-1 px-3 pb-2">     
+                {/* <div className="flex items-center gap-6 mt-1 px-3 pb-2">     
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -189,6 +194,23 @@ const ShowCase = () => {
                       className="w-6 h-6"
                     />
                     <p className="font-mono text-black text-base sm:text-lg lg:text-xl">
+                      Source Code
+                    </p>
+                  </a>
+                </div> */}
+                <div className="flex flex-col sm:flex-row items-center gap-4 mt-1 px-3 pb-2 w-full">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/AbbasHirani/Library-Management-System-GUI-Desktop-App.git"
+                    className="flex items-center justify-center gap-2 w-full sm:w-auto px-3 py-2 rounded-lg bg-white shadow-md hover:bg-gray-200 transition-colors duration-200"
+                  >
+                    <img
+                      src="images/code.png"
+                      alt="GitHub icon"
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                    />
+                    <p className="font-mono text-black text-sm sm:text-base md:text-lg lg:text-xl">
                       Source Code
                     </p>
                   </a>

@@ -62,9 +62,9 @@ const Hero = () => {
                         >
                         <VariableProximity
                             label={`Take a look at my projects to see how I turn ideas into reality.\nLet's connect and create something amazing together!`}
-                            className={'variable-proximity-demo pointer-events-none'}
+                            className={'variable-proximity-demo pointer-events-none text-sm md:text-base'}
                             style={{ whiteSpace: 'pre-line' }} 
-                            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                            fromFontVariationSettings="'wght' 100, 'opsz' 9"
                             toFontVariationSettings="'wght' 1000, 'opsz' 40"
                             containerRef={containerRef}
                             radius={100}
@@ -79,9 +79,9 @@ const Hero = () => {
                 </div>
             </header>
             <figure>
-                <div className='hero-3d-layout border-red-200'>
+                <div className='hero-3d-layout'>
 
-                    {/* <HeroExperience /> */}
+                    <HeroExperience />
                     
                 </div>
             </figure>
