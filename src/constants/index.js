@@ -152,6 +152,7 @@ const expCards = [
     logoPath: "/images/zoro2.png",
     title: "BackEnd Developer Intern",
     date: "July 2025 - Present",
+    location:'Remote',
     responsibilities: [
       "Developed RESTful APIs using Node.js and Express.js for a comprehensive blog management system with authentication, article management, CRUD operations, and newsletter subscription functionality",
       "Designed and implemented MongoDB database solutions with optimized schemas and queries for content management systems supporting the company's blog platform",
@@ -159,6 +160,50 @@ const expCards = [
     ],
   },
 ];
+
+const eduCards = [
+  {
+    review: 'Focused on backend development and practical IoT builds, applying CS fundamentals to deliver projects like an ESP32-based snack vending machine while actively participating in hackathons and college tech events to strengthen teamwork, problem-solving, and real-world execution.',
+    imgPath:"/images/cres-logo-big.png",
+    logoPath:"/images/cres-logo.png",
+    title: 'BTech Computer Science and Engineering (Internet of Things)',
+    date:'August 2023 - July 2027',
+    location:'Vandalur, Tamil Nadu',
+    responsibilities:[
+      '8.46 GPA (4 Semesters)',
+    ],
+    achivements:[
+      'Participated with a Team and Won Second Price in a Intra Collage Competition "Project Expo 2025"',
+    ],
+    activities:[
+      'Designed and built an IoT-based snack vending machine using the ESP32 chipset, enabling item dispensing based on user selection.',
+      'Engaged in multiple college events to deepen technical knowledge and strengthen professional networking.',
+      'Participated in multiple intra- and inter-collegiate hackathons, collaborating on rapid prototyping and problem-solving under time constraints',
+      'Active member of multiple college clubs, contributing to events, workshops, and peer learning initiatives.',
+      'Earned multiple industry-relevant certifications, strengthening technical proficiency and credibility.'
+    ]
+  },
+  {
+    review: 'Built a strong foundation in mathematics, physics, and computing, with early exposure to programming and practical problem-solving.',
+    imgPath:"/images/asan-logo-big.png",
+    logoPath:"/images/asan-logo.png",
+    title: 'Higher Secondary (Class XII) – Science with Computer',
+    date:'April 2023',
+    location : 'Chennai, Tamil Nadu',
+    responsibilities:[
+      'Marks : 472 / 500 ',
+    ],
+    achivements:[
+      'Achieved strong grades in core subjects (Chemistry/CS/Physics)',
+      'Led/Contributed to tech-related club activities and peer learning sessions',
+      'Built a production-style Library Management System using Python and MySQL for CS project work, covering book cataloging, member management, issue/return tracking, and reporting'
+    ],
+    activities:[
+      'Participated in school-level coding/science activities and tech club sessions',
+      'Assisted teachers/peers with basic computer and tech setup during events',
+    ]
+  }
+]
 
 const expLogos = [
   {
@@ -245,6 +290,7 @@ export {
   logoIconsList,
   counterItems,
   expCards,
+  eduCards,
   expLogos,
   testimonials,
   socialImgs,

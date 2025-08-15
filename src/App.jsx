@@ -5,7 +5,7 @@ import Navbar from './components/navbar';
 import LogoSection from './sections/LogoSection';
 import FeatureCards from './sections/FeatureCards';
 import ExperienceSection from './sections/ExperienceSection';
-
+import EducationSection from './sections/EducationSection'
 const App = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const App = () => {
       <LogoSection />
       <FeatureCards/>
       <ExperienceSection />
+      <EducationSection />
     </>
     
   );
