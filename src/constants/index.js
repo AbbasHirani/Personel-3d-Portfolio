@@ -113,11 +113,28 @@ const techStackImgs = [
 ];
 
 const techStackIcons = [
+   {
+    name: "MongoDB",
+    modelPath: "/models/mongodb.glb",
+    scale: 1.6,
+    rotation: [1.4, 0, 0],
+  },{
+    name: "Express",
+    modelPath: "/models/express.glb",
+    scale: 1.7,
+    rotation: [1.6, 0, 0],
+  },
   {
     name: "React Developer",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
+  },
+  {
+    name: "Node Developer",
+    modelPath: "/models/node-transformed.glb",
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Python Developer",
@@ -126,19 +143,25 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
+    name: "MySQL",
+    modelPath: "/models/sql.glb",
+    scale: 1.3,
+    rotation: [1.6, 0, 0],
   },
   {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
-    rotation: [0, 0, 0],
+    name: "Java Script",
+    modelPath: "/models/javasc.glb",
+    scale: 1.3,
+    rotation: [1.6, 0, 0],
+  },
+   {
+    name: "C++",
+    modelPath: "/models/c++.glb",
+    scale: 1.3,
+    rotation: [1.6, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "GitHub",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
