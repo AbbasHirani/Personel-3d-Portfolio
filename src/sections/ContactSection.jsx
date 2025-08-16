@@ -1,18 +1,42 @@
 import ContactExperience from "../components/ContactModels/ContactExperience"
 import TitleHeader from "../components/TitleHeader"
 import { useState } from "react"
-
+import emailjs from '@emailjs/browser'
+import { useRef } from "react"
 
 const ContactSection = () => {
 
+    const fromRef =useRef(null);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: ""
-    })
+    }); 
+
+    const [loading,setLoading] = useState(false);
+
     const handleChange = (e) => {
         const { name, value } = e.target
         setFormData((prev) => ({ ...prev, [name]: value }))
+    }
+
+    const handleSubmit =async (e)=>{
+        e.preventDefault();
+        setLoading(true);
+        try{
+            await emailjs.sendForm(
+                import.meta.env.VITE_APP_SERVICE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                fromRef.current,
+                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+            )
+        }catch(error){  
+            console.log('EmailJs Error,',error)
+        }finally{
+            setLoading(false)
+        }
+
+        setFormData({name:'',email:'',message:''})
     }
 
   return (
@@ -27,7 +51,8 @@ const ContactSection = () => {
                 <div className="xl:col-span-5">
                     <div className="flex-center card-border rounded-xl p-10">
                         <form 
-                        // onSubmit={handleSubmit}
+                        ref={fromRef}
+                        onSubmit={handleSubmit}
                         className="w-full flex flex-col gap-7">
                             <div >
                                 <label htmlFor="name">Name</label>
@@ -43,10 +68,10 @@ const ContactSection = () => {
 
                                     </textarea>
                                 </div>
-                                <button type="submit" className="w-full mt-4">
+                                <button type="submit" className="w-full mt-4" disabled={loading}>
                                     <div className="cta-button group">  
                                         <div className="bg-circle" />
-                                        <p className="text">Send Message</p>
+                                        <p className="text"> {loading ? 'Sending.....' : 'Send Message'}</p>
                                         <div className="arrow-wrapper">
                                             <img src="/images/arrow-down.svg" alt="arr" />
                                         </div>
