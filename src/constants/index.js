@@ -289,21 +289,35 @@ const testimonials = [
 ];
 
 const socialImgs = [
+   {
+    name: "Email",
+    url:'mailto:abbashirani154@gmail.com',
+    imgPath: "/images/email.png",
+  },
+  {
+    name: "Linkedin",
+    url:'https://www.linkedin.com/in/abbashirani/',
+    imgPath: "/images/linkedin.png",
+  },
+    {
+    name: "GitHub",
+    url:'https://github.com/AbbasHirani',
+    imgPath: "/images/github.png",
+  },
   {
     name: "insta",
+    url:'https://www.instagram.com/abbashirani154/',
     imgPath: "/images/insta.png",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "LeetCode",
+    url:'https://leetcode.com/u/AbbasHirani/',
+    imgPath: "/images/leetcode.png",
   },
   {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    name: "Stack OverFlow",
+    url:'https://stackoverflow.com/users/27247936/abbas-hirani',
+    imgPath: "/images/stack-overflow.png",
   },
 ];
 
