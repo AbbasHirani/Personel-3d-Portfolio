@@ -1,4 +1,4 @@
-import { techStackIcons } from '../constants/index'
+import { socialImgs, techStackIcons, techStackImgs } from '../constants/index'
 import TitleHeader from '../components/TitleHeader'
 import TechIcon from '../components/Models/TechLogos/TechIcon'
 import { useGSAP } from '@gsap/react'
@@ -34,14 +34,30 @@ return (
         sub="🤝 The Skills I Bring to the Table" 
       />
     <div className="tech-grid">
+      {/* 3d Tech Stack (error in Phones) */}
       {techStackIcons.map((icons) => (
         <div key={icons.name} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
+          <div className='tech-card-animated-bg'/>
           <div className="tech-card-content">
             <div className="tech-icon-wrapper">
               <TechIcon model={icons} />
             </div>
             <div className="padding-x w-full">
               <p>{icons.name}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+      {/* Normal Imgs TechStack */}
+      {techStackImgs.map((icon)=>(
+        <div className='card-border tech-card overflow-hidden group xl:rounded-full rounded-lg'>
+          <div className='tech-card-animated-bg'/>
+          <div className='tech-card-content'>
+            <div className='tech-icon-wrapper'>
+              <img src={icon.imgPath} alt="icon" />
+            </div>
+            <div className='padding-x w-full'>
+              <p>{icon.name}</p>
             </div>
           </div>
         </div>

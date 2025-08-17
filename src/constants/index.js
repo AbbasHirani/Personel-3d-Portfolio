@@ -90,81 +90,62 @@ const abilities = [
 ];
 
 const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
+   {
+    name: "MongoDB",
+    imgPath: "/images/skill_techstack/mongodb.png",
   },
   {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    name: "Express",
+    imgPath: "/images/skill_techstack/Express.png",
   },
   {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    name: "MySQL",
+    imgPath: "/images/skill_techstack/mysql.png",
   },
   {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    name: "JavaScript",
+    imgPath: "/images/skill_techstack/javasc.png",
   },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+{
+    name: "C++",
+    imgPath: "/images/skill_techstack/c++.png",
   },
+  // {
+  //   name: "ADobe Photoshop",
+  //   imgPath: "/images/skill_techstack/photoshop.png",
+  // },
 ];
 
 const techStackIcons = [
-   {
-    name: "MongoDB",
-    modelPath: "/models/techIcons/mongodb.glb",
-    scale: 1.6,
-    rotation: [1.4, 0, 0],
-  },{
-    name: "Express",
-    modelPath: "/models/techIcons/express.glb",
-    scale: 1.7,
-    rotation: [1.6, 0, 0],
-  },
   {
-    name: "React Developer",
+    name: "React",
     modelPath: "/models/techIcons/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Node Developer",
+    name: "Node",
     modelPath: "/models/techIcons/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Python Developer",
+    name: "Python",
     modelPath: "/models/techIcons/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
-  },
-  {
-    name: "MySQL",
-    modelPath: "/models/techIcons/sql.glb",
-    scale: 1.3,
-    rotation: [1.6, 0, 0],
-  },
-  {
-    name: "Java Script",
-    modelPath: "/models/techIcons/javasc.glb",
-    scale: 1.3,
-    rotation: [1.6, 0, 0],
-  },
-   {
-    name: "C++",
-    modelPath: "/models/techIcons/c++.glb",
-    scale: 1.3,
-    rotation: [1.6, 0, 0],
   },
   {
     name: "GitHub",
     modelPath: "/models/techIcons/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
+  },
+  {
+    name: "Three JS",
+    modelPath: "/models/techIcons/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0,0, 0],
   },
 ];
 
