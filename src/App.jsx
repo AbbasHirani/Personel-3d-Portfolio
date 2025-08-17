@@ -3,6 +3,7 @@ import Hero from './sections/Hero';
 import ShowCase from './sections/ShowCase';
 import Navbar from './components/navbar';
 import LogoSection from './components/LogoSection';
+import FeatureCards from './sections/FeatureCards';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <ShowCase />
       <LogoSection />
+      <FeatureCards />
     </>
     
   );
