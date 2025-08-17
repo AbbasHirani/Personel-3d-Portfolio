@@ -167,6 +167,36 @@ const techStackIcons = [
     scale: 0.05,
     rotation: [0,0, 0],
   },
+  {
+    name: "C++",
+    modelPath: "/models/techIcons/c++_transformed.glb",
+    scale: 1.3,
+    rotation: [1.6,0, 0],
+  },
+  {
+    name: "Express JS",
+    modelPath: "/models/techIcons/express_transformed.glb",
+    scale: 1.9,
+    rotation: [1.6,0, 0],
+  },
+   {
+    name: "Mongo DB",
+    modelPath: "/models/techIcons/mongodb_transformed.glb",
+    scale: 1.6,
+    rotation: [1.5,0, 0],
+  },
+  {
+    name: "MySQL",
+    modelPath: "/models/techIcons/sql_transformed.glb",
+    scale: 1.5,
+    rotation: [1.6,0, 0],
+  },
+  {
+    name: "JavaScript",
+    modelPath: "/models/techIcons/javasc_transformed.glb",
+    scale: 1.6,
+    rotation: [1.6,0, 0],
+  },
 ];
 
 const expCards = [

@@ -1,10 +1,26 @@
 import ContactExperience from "../components/ContactModels/ContactExperience"
 import TitleHeader from "../components/TitleHeader"
-import { useState } from "react"
 import emailjs from '@emailjs/browser'
-import { useRef } from "react"
+import { useRef,useState,useEffect } from "react"
+
+function useSectionVisible(id = 'hero-3d', threshold = 0.1) {
+const [visible, setVisible] = useState(true);
+useEffect(() => {
+const el = document.getElementById(id);
+if (!el) return;
+const io = new IntersectionObserver(
+([entry]) => setVisible(entry.isIntersecting),
+{ threshold }
+);
+io.observe(el);
+return () => io.disconnect();
+}, [id, threshold]);
+return visible;
+}
 
 const ContactSection = () => {
+
+    const visible3D = useSectionVisible('contact-3d', 0.1);
 
     const fromRef =useRef(null);
     const [formData, setFormData] = useState({
@@ -82,8 +98,8 @@ const ContactSection = () => {
                 </div>
                 {/* Contact Form Right Side */}
                 <div className="xl:col-span-7 min-h-96">
-                    <div className="w-full h-full bg-[#cd7c2e] hover:cursor-grab rounded:3xl overflow-hidden">
-                        <ContactExperience />
+                    <div id='contact-3d' className="w-full h-full bg-[#cd7c2e] hover:cursor-grab rounded:3xl overflow-hidden">
+                        {visible3D && <ContactExperience />}
                     </div>
                 </div>
             </div>

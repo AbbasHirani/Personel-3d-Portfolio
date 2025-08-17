@@ -1,13 +1,31 @@
 import { words } from '../constants';
 import Button from '../components/button';
-import { useRef } from 'react';
+import { useRef,useEffect, useState  } from 'react';
 import VariableProximity from '../components/VariableProximity';
 import HeroExperience from '../components/HeroModels/HeroExperience';
 import { useGSAP } from '@gsap/react';  
 import gsap from 'gsap';
 import AnimatedCounter from '../components/animatedCounter';
 
+function useSectionVisible(id = 'hero-3d', threshold = 0.1) {
+const [visible, setVisible] = useState(true);
+useEffect(() => {
+const el = document.getElementById(id);
+if (!el) return;
+const io = new IntersectionObserver(
+([entry]) => setVisible(entry.isIntersecting),
+{ threshold }
+);
+io.observe(el);
+return () => io.disconnect();
+}, [id, threshold]);
+return visible;
+}
+
 const Hero = () => {
+
+    const visible3D = useSectionVisible('hero-3d', 0.1);
+
     useGSAP(()=>{
         gsap.fromTo(`.hero-text h1 `,
             {
@@ -79,9 +97,9 @@ const Hero = () => {
                 </div>
             </header>
             <figure>
-                <div className='hero-3d-layout'>
+                <div className='hero-3d-layout' id='hero-3d'>
 
-                    <HeroExperience />
+                    {visible3D && <HeroExperience />}
                     
                 </div>
             </figure>
