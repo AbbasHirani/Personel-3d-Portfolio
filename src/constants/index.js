@@ -115,12 +115,12 @@ const techStackImgs = [
 const techStackIcons = [
   {
     name: "MongoDB",
-    modelPath: "/models/techIcons/mongodb.glb",
+    modelPath: "/models/techIcons/mongodb_transformed.glb",
     scale: 1.6,
     rotation: [1.4, 0, 0],
   },{
     name: "Express",
-    modelPath: "/models/techIcons/express.glb",
+    modelPath: "/models/techIcons/express_transformed.glb",
     scale: 1.7,
     rotation: [1.6, 0, 0],
   },
@@ -144,19 +144,19 @@ const techStackIcons = [
   },
   {
     name: "MySQL",
-    modelPath: "/models/techIcons/sql.glb",
+    modelPath: "/models/techIcons/sql_transformed.glb",
     scale: 1.3,
     rotation: [1.6, 0, 0],
   },
   {
     name: "Java Script",
-    modelPath: "/models/techIcons/javasc.glb",
+    modelPath: "/models/techIcons/javasc_transformed.glb",
     scale: 1.3,
     rotation: [1.6, 0, 0],
   },
    {
     name: "C++",
-    modelPath: "/models/techIcons/c++.glb",
+    modelPath: "/models/techIcons/c++_transformed.glb",
     scale: 1.3,
     rotation: [1.6, 0, 0],
   },

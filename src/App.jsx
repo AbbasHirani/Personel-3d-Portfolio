@@ -11,13 +11,13 @@ import TechStack from './sections/TechStack';
 const App = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <ShowCase />
       <LogoSection />
       <FeatureCards />
       <ExperienceSection />
-      <EducationSection />
+      <EducationSection /> */}
       <TechStack />
     </>
     
