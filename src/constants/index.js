@@ -99,6 +99,26 @@ const techStackImgs = [
     imgPath: "/images/skill_techstack/Express.png",
   },
   {
+    name: "React",
+    imgPath: "/images/skill_techstack/react copy.png",
+  },
+  {
+    name: "Node JS",
+    imgPath: "/images/skill_techstack/node.png",
+  },
+  {
+    name: "Three JS",
+    imgPath: "/images/skill_techstack/three.png",
+  },
+  {
+    name: "Python",
+    imgPath: "/images/skill_techstack/py.png",
+  },
+  {
+    name: "Github",
+    imgPath: "/images/skill_techstack/github.png",
+  },
+  {
     name: "MySQL",
     imgPath: "/images/skill_techstack/mysql.png",
   },
