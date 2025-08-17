@@ -20,11 +20,11 @@ const navLinks = [
 ];
 
 const words = [
-    { text : 'Full Stack Developer' , imgPath: '/images/code.svg' },
-    { text : 'React Developer' , imgPath: '/images/react.svg' },
-    {text : 'Backend Developer' , imgPath: '/images/backend.png'},
-    { text : 'Graphic Designer', imgPath: '/images/graphic.png'},
-    { text : 'FreeLancer', imgPath: '/images/freelance.png' },
+    { text : 'Full Stack Developer' , imgPath: '/images/hero-sec/code.svg' },
+    { text : 'React Developer' , imgPath: '/images/hero-sec/react.svg' },
+    {text : 'Backend Developer' , imgPath: '/images/hero-sec/backend.png'},
+    { text : 'Graphic Designer', imgPath: '/images/hero-sec/graphic.png'},
+    { text : 'FreeLancer', imgPath: '/images/hero-sec/freelance.png' },
 ]
 
 
@@ -115,54 +115,54 @@ const techStackImgs = [
 const techStackIcons = [
    {
     name: "MongoDB",
-    modelPath: "/models/mongodb.glb",
+    modelPath: "/models/techIcons/mongodb.glb",
     scale: 1.6,
     rotation: [1.4, 0, 0],
   },{
     name: "Express",
-    modelPath: "/models/express.glb",
+    modelPath: "/models/techIcons/express.glb",
     scale: 1.7,
     rotation: [1.6, 0, 0],
   },
   {
     name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
+    modelPath: "/models/techIcons/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Node Developer",
-    modelPath: "/models/node-transformed.glb",
+    modelPath: "/models/techIcons/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
+    modelPath: "/models/techIcons/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
     name: "MySQL",
-    modelPath: "/models/sql.glb",
+    modelPath: "/models/techIcons/sql.glb",
     scale: 1.3,
     rotation: [1.6, 0, 0],
   },
   {
     name: "Java Script",
-    modelPath: "/models/javasc.glb",
+    modelPath: "/models/techIcons/javasc.glb",
     scale: 1.3,
     rotation: [1.6, 0, 0],
   },
    {
     name: "C++",
-    modelPath: "/models/c++.glb",
+    modelPath: "/models/techIcons/c++.glb",
     scale: 1.3,
     rotation: [1.6, 0, 0],
   },
   {
     name: "GitHub",
-    modelPath: "/models/git-svg-transformed.glb",
+    modelPath: "/models/techIcons/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -171,8 +171,8 @@ const techStackIcons = [
 const expCards = [
   {
     review: "Abbas demonstrated exceptional problem-solving skills and backend development expertise during his internship, successfully architecting robust API solutions for our blog management system. His dedication to learning MongoDB optimization and Node.js best practices has been instrumental in strengthening our platform's reliability and performance.",
-    imgPath: "/images/zoro2.png",
-    logoPath: "/images/zoro2.png",
+    imgPath: "/images/carrer/zoro2.png",
+    logoPath: "/images/carrer/zoro2.png",
     title: "BackEnd Developer Intern",
     date: "July 2025 - Present",
     location:'Remote',
@@ -187,8 +187,8 @@ const expCards = [
 const eduCards = [
   {
     review: 'Focused on backend development and practical IoT builds, applying CS fundamentals to deliver projects like an ESP32-based snack vending machine while actively participating in hackathons and college tech events to strengthen teamwork, problem-solving, and real-world execution.',
-    imgPath:"/images/cres-logo-big.png",
-    logoPath:"/images/cres-logo.png",
+    imgPath:"/images/education/cres-logo-big.png",
+    logoPath:"/images/education/cres-logo.png",
     title: 'BTech Computer Science and Engineering (Internet of Things)',
     date:'August 2023 - July 2027',
     location:'Vandalur, Tamil Nadu',
@@ -208,8 +208,8 @@ const eduCards = [
   },
   {
     review: 'Built a strong foundation in mathematics, physics, and computing, with early exposure to programming and practical problem-solving.',
-    imgPath:"/images/asan-logo-big.png",
-    logoPath:"/images/asan-logo.png",
+    imgPath:"/images/education/asan-logo-big.png",
+    logoPath:"/images/education/asan-logo.png",
     title: 'Higher Secondary (Class XII) – Science with Computer',
     date:'April 2023',
     location : 'Chennai, Tamil Nadu',
@@ -248,43 +248,43 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "I can’t say enough good things about Abbas. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+    imgPath: "/images/testimonials/client1.png",
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Working with Abbas was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+    imgPath: "/images/testimonials/client3.png",
   },
   {
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "Collaborating with Abbas was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    imgPath: "/images/testimonials/client2.png",
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "Abbas was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+    imgPath: "/images/testimonials/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+      "Abbas's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+    imgPath: "/images/testimonials/client4.png",
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "Abbas was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+    imgPath: "/images/testimonials/client6.png",
   },
 ];
 
@@ -292,32 +292,32 @@ const socialImgs = [
    {
     name: "Email",
     url:'mailto:abbashirani154@gmail.com',
-    imgPath: "/images/email.png",
+    imgPath: "/images/footer/email.png",
   },
   {
     name: "Linkedin",
     url:'https://www.linkedin.com/in/abbashirani/',
-    imgPath: "/images/linkedin.png",
+    imgPath: "/images/footer/linkedin-copy.png",
   },
     {
     name: "GitHub",
     url:'https://github.com/AbbasHirani',
-    imgPath: "/images/github.png",
+    imgPath: "/images/footer/github.png",
   },
   {
     name: "insta",
     url:'https://www.instagram.com/abbashirani154/',
-    imgPath: "/images/insta.png",
+    imgPath: "/images/footer/insta.png",
   },
   {
     name: "LeetCode",
     url:'https://leetcode.com/u/AbbasHirani/',
-    imgPath: "/images/leetcode.png",
+    imgPath: "/images/footer/leetcode.png",
   },
   {
     name: "Stack OverFlow",
     url:'https://stackoverflow.com/users/27247936/abbas-hirani',
-    imgPath: "/images/stack-overflow.png",
+    imgPath: "/images/footer/stack-overflow.png",
   },
 ];
 

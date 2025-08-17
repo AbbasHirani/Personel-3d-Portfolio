@@ -44,7 +44,7 @@ const ShowCase = () => {
           delay:0.2 *(index+1),
           scrollTrigger : {
             trigger: card,
-            start: 'top bottom +=400', 
+            start: 'top bottom -=200', 
           }
         }
       )
@@ -66,7 +66,7 @@ const ShowCase = () => {
             {/* left side main Image */}
             <div className="first-project-wrapper" ref={project1Ref}>
               <div className="image-wrapper">
-                <img  src="images/airbnb-1.png" alt="airbnb-1" />
+                <img  src="images/projects/airbnb-1.png" alt="airbnb-1" />
               </div>
               <div className="text-content">
                 {/* decription */}
@@ -119,23 +119,23 @@ const ShowCase = () => {
                 <div className="w-full flex flex-wrap gap-3 mt-3 items-center px-3">
                   <h1 className='text-center mr-3 w-28 h-6 pt-1 text-xs rounded bg-white/10 px-2'>Tech Stack Used</h1>
                    <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
-                    <img src="/images/logos/node.png" alt="Node.js" className="w-4 h-4" /> 
+                    <img src="/images/proj_techstack/node.png" alt="Node.js" className="w-4 h-4" /> 
                     <span>Node.js</span>  
                   </div>
                   <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
-                    <img src="/images/logos/mongodb.svg" alt="mongodb.js" className="w-4 h-4" /> 
+                    <img src="/images/proj_techstack/mongodb.svg" alt="mongodb.js" className="w-4 h-4" /> 
                     <span>Mongodb</span>  
                   </div>
                   <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
-                    <img src="/images/logos/Express.png" alt="express" className="w-4 h-4" /> 
+                    <img src="/images/proj_techstack/Express.png" alt="express" className="w-4 h-4" /> 
                     <span>Express.js</span>  
                   </div>
                   <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
-                    <img src="/images/logos/bootstrap.png" alt="bootstrap" className="w-4 h-4" /> 
+                    <img src="/images/proj_techstack/bootstrap.png" alt="bootstrap" className="w-4 h-4" /> 
                     <span>Bootstrap</span>  
                   </div>
                   <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
-                    <img src="/images/logos/cloud.png" alt="cloudinary" className="w-4 h-4" /> 
+                    <img src="/images/proj_techstack/cloud.png" alt="cloudinary" className="w-4 h-4" /> 
                     <span>Cloudinary</span>  
                   </div>
                 </div>
@@ -145,13 +145,13 @@ const ShowCase = () => {
             <div className="project-list-wrapper overflow-hidden ">
               <div className="project" ref={project2Ref}>
                 <div className="image-wrapper bg-[#ffe7eb]">
-                  <img src="images/airbnb-2.png" alt="airbnb-2" />
+                  <img src="images/projects/airbnb-2.png" alt="airbnb-2" />
                 </div >
                 <p className='pt-3 pl-1'>Listing detail view with server-rendered EJS + React interactivity, secure route access, owner association, price/location fields, reviews, and Mongoose population for related data.</p>
               </div>
               <div className="project" ref={project3Ref}>
                 <div className="image-wrapper bg-[#ffefdb]">
-                  <img src="images/airbnb-3.png" alt="airbnb-3" />
+                  <img src="images/projects/airbnb-3.png" alt="airbnb-3" />
                 </div>
                 <p className='pt-3 pl-1'>User registration via Passport.js (local strategy), session management with express-session, password hashing (passport-local-mongoose), input validation (Joi/Mongoose), and secure cookies.</p>
               </div>
@@ -167,7 +167,7 @@ const ShowCase = () => {
             {/* left side showcase */}
             <div className="first-project-wrapper" ref={project4Ref}>
               <div className="image-wrapper">
-                <img src="images/lib1.png" alt="Project 1" />
+                <img src="images/projects/lib1.png" alt="Project 1" />
               </div>
               <div className="text-content">
                 {/* decription */}
@@ -181,23 +181,6 @@ const ShowCase = () => {
                     </ p>
                   </div>
                 </div>
-                {/* <div className="flex items-center gap-6 mt-1 px-3 pb-2">     
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/AbbasHirani/Library-Management-System-GUI-Desktop-App.git"
-                    className="flex items-center justify-center gap-3 w-full sm:w-50 px-4 py-2 rounded-lg bg-white shadow-md hover:bg-gray-200 transition-colors duration-200"
-                  >
-                    <img
-                      src="images/code.png"
-                      alt="GitHub icon"
-                      className="w-6 h-6"
-                    />
-                    <p className="font-mono text-black text-base sm:text-lg lg:text-xl">
-                      Source Code
-                    </p>
-                  </a>
-                </div> */}
                 <div className="flex flex-col sm:flex-row items-center gap-4 mt-1 px-3 pb-2 w-full">
                   <a
                     target="_blank"
@@ -218,11 +201,11 @@ const ShowCase = () => {
                 <div className="w-full flex flex-wrap gap-6 mt-3 items-center px-3">
                   <h1 className='text-center mr-3 w-28 h-6 pt-1 text-xs rounded bg-white/10 px-2'>Tech Stack Used</h1>
                    <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
-                    <img src="/images/logos/py.svg" alt="Node.js" className="w-4 h-4" /> 
+                    <img src="/images/proj_techstack/py.svg" alt="Node.js" className="w-4 h-4" /> 
                     <span>Python</span>  
                   </div>
                   <div className="flex items-center gap-1 px-2 py-1 rounded bg-white/10 text-xs">
-                    <img src="/images/logos/sql.svg" alt="mongodb.js" className="w-4 h-4" /> 
+                    <img src="/images/proj_techstack/sql.svg" alt="mongodb.js" className="w-4 h-4" /> 
                     <span>MySql</span>  
                   </div>
                 </div>
@@ -232,13 +215,13 @@ const ShowCase = () => {
             <div className="project-list-wrapper overflow-hidden ">
               <div className="project" ref={project5Ref}>
                 <div className="image-wrapper bg-[#ffe7eb]">
-                  <img src="images/lib.png" alt="Project 2" />
+                  <img src="images/projects/lib.png" alt="Project 2" />
                 </div>
                 <p className='pt-3 pl-1'>Tkinter UI + ttk.Treeview, MySQL (mysql.connector); CRUD for members (card number, name, phone, address, DOB), validated inputs, searchable/scrollable table, and modular code structure.</p>
               </div>
               <div className="project" ref={project6Ref}>
                 <div className="image-wrapper bg-[#ffefdb]">
-                  <img src="images/lib2.png" alt="Project 3" />
+                  <img src="images/projects/lib2.png" alt="Project 3" />
                 </div>
                 <p className='pt-3 pl-1'>Strengthened skills in event‑driven GUI design, reliable DB integrations, error handling, and writing reusable modules for maintainable desktop applications.</p>
               </div>

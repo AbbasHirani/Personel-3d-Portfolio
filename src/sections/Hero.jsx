@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section id="hero" className='relative overflow-hidden'>
         <div className='absolute top-0 left-0 z-10'>
-            <img src="/images/bg.png" alt="background" />
+            <img src="/images/hero-sec/bg.png" alt="background" />
         </div>
         <div className='hero-layout'>
             {/* left Hero content */}
@@ -36,8 +36,8 @@ const Hero = () => {
                     <div className='hero-text'>
                         <h1 style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                             Hi, I'm Abbas Hirani 
-                            <img src="/images/wave.png" alt="wave" 
-                            style={{ height: "1em", width: "auto" }}/>
+                            <img src="/images/hero-sec/hand.gif" alt="wave" 
+                            style={{ height: "1em", width: "auto", marginLeft:'5px'}}/>
                         </h1>
                         
                         <h1>
