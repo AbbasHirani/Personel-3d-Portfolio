@@ -113,12 +113,13 @@ const techStackImgs = [
 ];
 
 const techStackIcons = [
+  // {
+  //   name: "MongoDB",
+  //   modelPath: "/models/techIcons/mongodb_transformed.glb",
+  //   scale: 1.4,
+  //   rotation: [1.3, 0, 0],
+  // },
   {
-    name: "MongoDB",
-    modelPath: "/models/techIcons/mongodb_transformed.glb",
-    scale: 1.4,
-    rotation: [1.3, 0, 0],
-  },{
     name: "Express",
     modelPath: "/models/techIcons/express_transformed.glb",
     scale: 1.7,
