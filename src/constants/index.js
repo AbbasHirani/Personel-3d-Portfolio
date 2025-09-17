@@ -352,6 +352,117 @@ const socialImgs = [
   },
 ];
 
+const proj=[
+  {
+    projectName: "NoteSnips - Notes on the Go!",
+    img1Path: "images/projects/notesnips-1.png",
+    img1desc: [{ 
+      p1: "NoteSnips is a modern full-stack note-taking application designed for developers and professionals, featuring powerful rich text editing with TipTap, hierarchical notebook organization, and real-time auto-save functionality.", 
+      p2: "The application provides secure user authentication with password reset, responsive design across all devices, dark/light theme support, and intuitive sidebar navigation. Key capabilities include WYSIWYG editing with markdown shortcuts, automatic content saving, smart organization through notebooks and notes, and a foundation built for future collaborative features and advanced search functionality.",
+     }],
+    livelink : "https://notesnips.vercel.app/",
+    sourcecode:"https://github.com/AbbasHirani/NoteSnips",
+    techstack:[
+      {
+      name:"Next JS",
+      imgPath:"/images/proj_techstack/nextjs.png"
+    },
+    {
+      name:"TypeScript",
+      imgPath:"/images/proj_techstack/typescript.png"
+    },
+    {
+      name:"Neon DB",
+      imgPath:"/images/proj_techstack/neon.jpeg"
+    },
+    {
+      name:"Shad CN",
+      imgPath:"/images/proj_techstack/shadcn.png"
+    },
+    {
+      name:"Tailwind CSS",
+      imgPath:"/images/proj_techstack/tailwindcss.png"
+    },
+    {
+      name:"TipTap Editor",
+      imgPath:"/images/proj_techstack/tiptap.png"
+    },
+    {
+      name:"Framer Motion",
+      imgPath:"/images/proj_techstack/framer-motion.png"
+    },
+    {
+      name:"Better Auth",
+      imgPath:"/images/proj_techstack/better-auth.png"
+    },
+  ],
+  img2Path: "images/projects/notesnips-2.png",
+  img2desc : "Built with Next.js 15, TypeScript, React 18, Better Auth for authentication, Drizzle ORM for database operations, Tailwind CSS with Shadcn/ui components, and Framer Motion for animations. The architecture uses server-side rendering, type-safe operations, and secure session management.",
+  img3Path: "images/projects/NoteSnip-dark.png",
+  img3desc: "Demonstrates full-stack expertise through middleware-based route protection, Suspense boundaries for optimal performance, real-time content saving, form validation with React Hook Form and Zod, and production deployment on Vercel with automated CI/CD pipelines.",
+  },
+   {
+    projectName: "WanderLust - AirBnb Clone",
+    img1Path: "images/projects/airbnb-1.png",
+    img1desc:[{
+      p1:"Wanderlust is an Airbnb‑inspired full‑stack platform that lets users discover, create, and manage rental property listings with rich details, images, and reviews.",
+      p2 : "It delivers a seamless browsing experience with search and filtering, secure account management, and user-driven content, enabling hosts to publish listings and guests to explore, review, and engage—all within a responsive, production‑style interface."
+    }],
+    livelink : "https://wanderlust-kgz7.onrender.com/",
+    sourcecode:"https://github.com/AbbasHirani/WanderLust.git",
+    techstack:[
+      {
+      name:"Node JS",
+      imgPath:"/images/proj_techstack/node.png"
+    },
+    {
+      name:"MongoDB",
+      imgPath:"/images/proj_techstack/mongodb.svg"
+    },
+    {
+      name:"Express JS",
+      imgPath:"/images/proj_techstack/Express.png"
+    },
+    {
+      name:"Bootstrap",
+      imgPath:"/images/proj_techstack/bootstrap.png"
+    },
+    {
+      name:"Cloudinary",
+      imgPath:"/images/proj_techstack/cloud.png"
+    },
+  ],
+  img2Path: "images/projects/airbnb-2.png",
+  img2desc : "Listing detail view with server-rendered EJS + React interactivity, secure route access, owner association, price/location fields, reviews, and Mongoose population for related data.",
+  img3Path: "/images/projects/airbnb-3.png",
+  img3desc: "User registration via Passport.js (local strategy), session management with express-session, password hashing (passport-local-mongoose), input validation (Joi/Mongoose), and secure cookies.",
+  },
+  {
+    projectName: "Library Management System (GUI-based Desktop Application)",
+    img1Path: "images/projects/lib1.png",
+    img1desc:[{
+      p1:"A desktop Library Management System built with Python (Tkinter) and MySQL that enables librarians to efficiently create, view, update, and delete member accounts.",
+      p2 : "The app features a clean, navigable GUI with color‑coded windows, structured data views, and a scrollable table for quick record browsing—ideal for small libraries and educational institutions managing member records."
+    }],
+    livelink : "",
+    sourcecode:"https://github.com/AbbasHirani/Library-Management-System-GUI-Desktop-App.git",
+    techstack:[
+      {
+      name:"Python",
+      imgPath:"/images/proj_techstack/py.svg"
+    },
+    {
+      name:"MySql",
+      imgPath:"/images/proj_techstack/sql.svg"
+    },
+  ],
+  img2Path: "images/projects/lib.png",
+  img2desc : "Tkinter UI + ttk.Treeview, MySQL (mysql.connector); CRUD for members (card number, name, phone, address, DOB), validated inputs, searchable/scrollable table, and modular code structure.",
+  img3Path: "images/projects/lib2.png",
+  img3desc: "Strengthened skills in event‑driven GUI design, reliable DB integrations, error handling, and writing reusable modules for maintainable desktop applications.",
+  },  
+]
+
 export {
   words,
   abilities,
@@ -365,4 +476,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  proj
 };
